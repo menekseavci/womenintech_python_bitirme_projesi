@@ -63,3 +63,48 @@ Bu veri setini order_items, products veri setleri ile birleştirerek ürün baz�
 ### product_category_name_translation.csv
 * Bu veri setinde ürün kategorileri ve bunların ingilizce karşılıkları bulunmaktadır.
 * Bu veri setini diğer veri setleri ile birleştirerel siparişleri ingilizce kategorilerine göre kategorilendirdim.
+
+## Question 1
+* İlk sorumda ortalama sipariş tutarını buldum.
+* order_payments dosyasından faydalandım.
+
+Bu dosyada siparişin her taksiti yeni bir satır olarak girilmiştir, bazı ödemeler kuponlar ile yapılmıştır. Bu yüzden siparişlerimi order_id üzerinden gruplayarak payment_value değerlerini topladım ve sonrasında ortalama tutarı hesapladım.
+
+## Question 2
+* Bu soruda ödeme türlerinin yüzdelik oranlarını hesapladım
+* Bu oranları bir pie chart ile göreselleştirdim
+
+Sipariş ödemeleri birden fazla ödeme türü ile ödendniği için her ödeme türünden toplam ne kadar ödeme alındığını hesapladım ve toplam ödemeye göre oranladım.
+
+image.png
+
+## Question 3
+* Bu soruda yıllara ve ayrlara göre ne kadar sipariş alındğını hesapladım.
+* orders veri setindeki tarihleri datetime modülünden faydalanarak elde ettim.
+* Bu tarihleri yıllara ve aylara göre grplayarak aylara göre sipariş sayısını hesapladım.
+
+image.png
+
+## Question 4 
+* Bu soruda order_items, sellers veri setlerinden faydalandım
+* Bu 2 veri setini gruplayarak hangi satıcının ne kadar ürün sattığını, bu ürünlerin toplam değerini ve toplam kargo ücret, gibi verileri içeren bir DataFrame oluşturdum.
+* Bu DataFrame'i gruplayarak belirli bir bilgede ka. adet satıcı olduğunu, bunların toplam ne kadar üün sattığını bu ürünlerin toplam değeri gibi veriler elde ettim.
+* En çok satış yapan  satıcıyı belirledim.
+* Eyaletlere göre satıcı sayısını belirttiğim bir grafik oluşturdum.
+
+image.png
+
+image.png
+
+## Question 5
+* Bu soruda hangi kategoride kaç adet ürün satıldığını belirledim
+* Bu kategorilerdeki toplam satış değerini satılan ürün miktarına bölerek kategorilerin ortalama fifaytını belirledim.
+* En ucuz ve en pahalı kategoriyi belirledim
+
+## Question 6 
+* Bu soruda orders veri setindeki tahmini teslimate tarihi için verilen zaman dilimi ile siparişlerin müşteriye ulaştığı zamanı karşılatırdım
+
+## Question 7 
+* Bu soruda ürün kategorilerindeki ürünlerin ortalama puanlarını görselleştirdim.
+
+
